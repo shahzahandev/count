@@ -38,7 +38,7 @@ const Count = () => {
             <h1 className="md:text-5xl text-4xl font-bold text-black md:mt-[30px] mt-3 text-purple-700">Count </h1>
             <h2 className="md:text-4xl text-3xl font-bold text-black md:mt-[30px] mt-3 text-gray-800">{countIn}</h2>
             <h3 className="md:text-8xl text-6xl font-bold md:mt-10 mt-2"></h3>
-          <div className="flex md:gap-x-5 gap-x-2">
+          <div className="flex md:gap-x-5 gap-x-2 md:mt-[-30px] mt-[0px]">
               <button
               onClick={handleCount3}
             className="border-none cursor-pointer hover:bg-green-600 hover:text-white mt-10 px-10 py-4 rounded-2xl bg-green-500 md:text-4xl text-[18px] capitalize font-semibold hover:scale-105 transition-all duration-100 ">3+</button>
@@ -61,7 +61,7 @@ const Count = () => {
               className="border-none cursor-pointer hover:bg-green-600 hover:text-white mt-10 md:px-10 px-5 py-4 rounded-2xl bg-green-500 md:text-4xl text-[18px]  font-semibold hover:scale-105 transition-all duration-100 ">Count * Count</button>
           </div>
           <div>
-                <button
+           <button
               onClick={handleCountRest}
               className="border-none cursor-pointer hover:bg-red-600 hover:text-white md:px-50 px-35 py-4 rounded-2xl bg-red-400 md:text-4xl text-[18px] capitalize font-semibold hover:scale-105 transition-all duration-100 md:mt-10 mt-[15px]">Rest</button>
           </div>
