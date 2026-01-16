@@ -63,7 +63,7 @@ const Count = () => {
           <div>
                 <button
               onClick={handleCountRest}
-              className="border-none cursor-pointer hover:bg-red-600 hover:text-white md:px-0 px-35 py-4 rounded-2xl bg-red-400 md:text-4xl text-[18px] capitalize font-semibold hover:scale-105 transition-all duration-100 md:mt-10 mt-[15px]">Mult by 5</button>
+              className="border-none cursor-pointer hover:bg-red-600 hover:text-white md:px-50 px-35 py-4 rounded-2xl bg-red-400 md:text-4xl text-[18px] capitalize font-semibold hover:scale-105 transition-all duration-100 md:mt-10 mt-[15px]">Rest</button>
           </div>
           </div>
             </Container>
