@@ -2,7 +2,7 @@ import React from 'react'
 
 const CheckBox = () => {
   return (
-    <div className="bg-gray-300 pt-[150px] pb-[180px] bg-gray-400">
+    <div className="bg-gray-300 pt-[150px] pb-[180px]">
         <div className="flex justify-center items-center flex-col mt-10">
           <h1>do this</h1>
           <label htmlFor=""

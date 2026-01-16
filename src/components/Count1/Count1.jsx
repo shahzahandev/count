@@ -5,7 +5,7 @@ const Count1 = () => {
 
   const [count1, setCount1] = useState(0)
   return (
-    <div  className="bg-gray-300 md:pt-[120px] pt-[140px] md:pb-[120px] pb-[120px] bg-gray-400">
+    <div  className="bg-gray-400 md:pt-[120px] pt-[140px] md:pb-[120px] pb-[120px]">
       <Container>
         <div>
           <div className="flex justify-center items-center flex-col mt-10">
