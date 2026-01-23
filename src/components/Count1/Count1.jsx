@@ -1,14 +1,18 @@
 import { useState } from "react";
 import Container from "../Layout/Container";
-
+import Count from "../Count/Count"
+import Count2 from "../Count2/Count2";
+import CheckBox from "../CheckBox/CheckBox"
+<CheckBox />
 const Count1 = () => {
 
   const [count1, setCount1] = useState(0)
   return (
-    <div  className="bg-gray-400 md:pt-[120px] pt-[140px] md:pb-[120px] pb-[120px]">
+    <>
+        <div  className="bg-amber-200 md:pt-[220px] pt-[140px] md:pb-[220px] pb-[120px]">
       <Container>
         <div>
-          <div className="flex justify-center items-center flex-col mt-10">
+          <div className="flex justify-center items-center flex-col mt-10 pb-10">
             <p className="md:w-auto w-[300px] text-center font-semibold md:text-[24px] text-[16px]">React counter using useState manages a numeric value as state, updates it through button clicks, and re-renders the UI instantly. It’s a simple example of state management, event handling, and reactive updates in React applications.</p>
             <h1 className="md:text-5xl text-4xl font-bold text-black md:mt-[30px] mt-3 text-purple-700">Count</h1>
             <h3 className="md:text-8xl text-6xl font-bold md:mt-10 mt-2">{count1}</h3>
@@ -19,6 +23,11 @@ const Count1 = () => {
         </div>
       </Container>
     </div>
+     <Count></Count>
+     <Count2></Count2>
+     <CheckBox></CheckBox>
+    </>
+
   )
 }
 

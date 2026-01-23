@@ -9,7 +9,7 @@ const CheckBox = () => {
   }
 
   return (
-          <div className="bg-gray-300 pt-[120px] pb-[120px] overflow-x-hidden">
+          <div className="bg-green-200 pt-[120px] pb-[120px] overflow-x-hidden">
             <Container>
                 <div>
                     <div className="flex justify-center items-center flex-col mt-10">

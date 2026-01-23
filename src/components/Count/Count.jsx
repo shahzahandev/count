@@ -1,12 +1,9 @@
 import { useState } from "react"
 import Container from "../Layout/Container"
-import Count1 from "../Count1/Count1"
+
 
 const Count = () => {
-     const [countIn, setCountIn] = useState(0)
-
-
-
+    const [countIn, setCountIn] = useState(0)
 
     const handleCount1 = () => {
         setCountIn(countIn + 5)

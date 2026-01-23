@@ -5,7 +5,7 @@ const Count2 = () => {
     const [count, setCount] = useState("Hello")
 
     return (
-        <div className="bg-gray-400 pt-[120px] pb-[120px] overflow-x-hidden">
+        <div className="bg-green-500 pt-[120px] pb-[120px] overflow-x-hidden">
             <Container>
                 <div>
                     <div className="flex justify-center items-center flex-col mt-10">
