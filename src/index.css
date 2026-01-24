@@ -1,7 +1,11 @@
 /* @import "tailwindcss"; */
 @import "tailwindcss";
 
-
+@theme {
+  --color-secondary: #2298bc;
+  /* --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca; */
+}
 
 
 
