@@ -10,7 +10,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false)
 
     return (
-        <div className='bg-gray-900 fixed w-full px-3 md:px-0'>
+        <div className='font-main bg-gray-900 fixed w-full px-3 md:px-0'>
             <Container>
                 <div className='flex justify-between py-5'>
                     <NavLink to="">
@@ -20,7 +20,7 @@ const Navbar = () => {
                         </div>
                     </NavLink>
                     <ul className='md:flex hidden items-center gap-5 text-[18px] font-medium text-secondary cursor-pointer'>
-                        <NavLink to="count">
+                        <NavLink to="useState">
                             <li className="bg-transparent py-1 px-4 rounded-[25px] hover:bg-gray-800">useState</li>
                         </NavLink>
                         <NavLink to="useEffect">
@@ -34,8 +34,8 @@ const Navbar = () => {
                     <div className="block md:hidden">
                                {
                         show ?
-                          <ul className='absolute w-full bg-gray-800 top-[75px] transition-all duration-200 ease-in py-8 left-0 flex flex-col items-center gap-5 text-[20px] font-medium text-white cursor-pointer\'>
-                        <NavLink to="count">
+                          <ul className='absolute w-full bg-gray-900 top-[70px] transition-all duration-200 ease-in py-8 left-0 flex flex-col items-center gap-5 text-[20px] font-medium text-white cursor-pointer'>
+                        <NavLink to="useState">
                             <li className="bg-transparent py-1 px-4 rounded-[25px] hover:bg-gray-700">useState</li>
                         </NavLink>
                         <NavLink to="useEffect">

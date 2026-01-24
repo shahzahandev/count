@@ -1,9 +1,10 @@
 import React from 'react'
 import Container from '../Layout/Container'
+import { NavLink } from 'react-router-dom'
 
 const Banner = () => {
     return (
-        <div className='bg-gray-900 md:pt-[120px] pt-[100px] md:pb-[50px] pb-[50px] px-3 md:px-0'>
+        <div className=' bg-gray-900 md:pt-[120px] pt-[100px] md:pb-[50px] pb-[50px] px-3 md:px-0'>
             <Container>
                 <div>
                     <h1 className='text-white font-bold md:text-5xl text-3xl'>Built-in React <i className='text-secondary'>Hooks</i></h1>
@@ -19,7 +20,9 @@ const Banner = () => {
                         <div className='flex flex-col md:gap-y-2 gap-y-2 gap-x-15 md:mt-5 mt-2'>
                             <div>
                                 <ul className='flex md:flex-row flex-col font-medium md:gap-5 gap-2'>
-                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useStae Hook</li>
+                                    <NavLink to="useState">
+                                      <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useStae Hook</li>
+                                    </NavLink>
                                     <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useEffect Hooks</li>
                                     <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useCallback</li>
                                     <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useMemo</li>

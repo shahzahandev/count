@@ -1,11 +1,16 @@
 /* @import "tailwindcss"; */
 @import "tailwindcss";
 
+
 @theme {
   --color-secondary: #2298bc;
-  /* --color-tahiti: #3ab7bf;
-  --color-bermuda: #78dcca; */
+  --color-third: #6406a3;
+  /* --color-bermuda: #78dcca; */
 }
+
+/* @theme {
+  --font-main: "Open Sans", sans-serif; 
+} */
 
 
 
@@ -13,7 +18,7 @@
 
 .logo {
   cursor: pointer;
-  animation: logoUp  3s linear infinite;
+  animation: logoUp 5s linear infinite;
 
 }
 
@@ -24,11 +29,5 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
   }
 }

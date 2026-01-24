@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     Component: MainRoot,
     children: [
         { path: "/", Component: Banner},
-        { path: "count", Component: Count1},
+        { path: "useState", Component: Count1},
         { path: "useEffect", Component: UseEffectCount},
     ]
   }
