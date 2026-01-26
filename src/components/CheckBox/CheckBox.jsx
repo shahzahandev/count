@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Container from '../Layout/Container'
 import exam4 from "../../assets/useStateExam4.png"
+import { NavLink } from 'react-router-dom';
 
 const CheckBox = () => {
   const [liked, setLiked] = useState(true);
@@ -12,7 +13,7 @@ const CheckBox = () => {
   return (
     <div className="bg-gray-900 pt-[10px] pb-[50px] overflow-x-hidden px-3 md:px-0">
       <Container>
-        <div>
+        <div className='md:w-[80%] w-[100%]'>
           <div className="">
             <h2 className='text-third font-bold md:text-2xl md:mt-5 mt-2'>Basic useState examples</h2>
             <h3 className='text-white/60 font-bold md:text-[20px]'>Example 4 of 4: Checkbox (boolean) </h3>
@@ -32,6 +33,52 @@ const CheckBox = () => {
               </label>
               <p className="md:text-2xl font-bold text-third"> You {liked ? 'liked' : 'did not like'} this.</p>
             </div>
+               <div className='flex justify-center flex-col mt-10'>
+                        <h2 className='text-secondary font-bold md:text-3xl text-2xl'> <i>Hooks</i></h2>
+                        <div className='flex flex-col md:gap-y-2 gap-y-2 gap-x-15 md:mt-5 mt-2'>
+                            <div>
+                                <ul className='flex md:flex-row flex-col font-medium md:gap-5 gap-2'>
+                                    <NavLink to="/useState">
+                                      <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useState</li>
+                                    </NavLink>
+                                      <NavLink to="/useEffect">
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useEffect</li>
+                                    </NavLink>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useCallback</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useMemo</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useRef</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <ul className='flex md:flex-row flex-col font-medium md:gap-5 gap-2'>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useId</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useContext</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useEffectEvent</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useReducer</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useTransition</li>
+                                </ul>
+                            </div>
+
+                              <div>
+                                <ul className='flex md:flex-row flex-col font-medium md:gap-5 gap-2'>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useOptimistic</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useActionState</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useDebugValue</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useDeferredValue</li>
+                                </ul>
+                            </div>
+
+                               <div>
+                                <ul className='flex md:flex-row flex-col font-medium md:gap-5 gap-2'>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useSyncExternalStore</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useLayoutEffect</li>
+                                    <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useInsertionEffect</li>
+                                         <li className="px-3 py-1 bg-gray-800 cursor-pointer rounded-[15px] text-secondary font-semibold">useImperativeHandle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
           </div>
         </div>
       </Container>

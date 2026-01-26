@@ -5,6 +5,7 @@ import Count2 from "../Count2/Count2";
 import CheckBox from "../CheckBox/CheckBox"
 import useStateImg from "../../assets/useState.png"
 import exam1 from "../../assets/useStateExam1.png"
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -14,9 +15,31 @@ const Count1 = () => {
   const [count1, setCount1] = useState(0)
   return (
     <>
-        <div  className=" bg-gray-900 md:pt-[80px] pt-[50px] md:pb-[10px] pb-[10px] md:px-0 px-5 text-white">
+        <div  className=" bg-gray-900 md:pt-[80px] pt-[50px] md:pb-[10px] pb-[10px] md:px-0 px-5 text-white relative">
+          <div className='fixed md:block hidden bg-gray-800 top-20 right-0 w-[300px] h-[600px] rounded-tl-[10px] rounded-bl-[10px]'>
+                <ul className='transition-all duration-200 ease-in flex flex-col items-start gap-1 text-[14px] font-medium  text-secondary cursor-pointer'>       
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">  <NavLink to="/useState">useState   </NavLink></li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full"> <NavLink to="/useEffect">useEffect </NavLink></li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useCallback</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useMemo</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useRef</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useId</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useContext</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useEffectEvent</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useReducer</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useTransition</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useOptimistic</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useActionState</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useDebugValue</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useDeferredValue</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useSyncExternalStore</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useLayoutEffect</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useInsertionEffect</li>
+                    <li className="bg-transparent py-1 px-4 rounded-[5px] hover:bg-gray-700 hover:w-full">useImperativeHandle</li>
+                </ul>
+            </div>
       <Container>
-        <div>
+        <div className="md:w-[80%] w-[100%]">
           <div className="flex flex-col mt-10 pb-10">
             <h2  className='text-white font-bold md:text-5xl text-3xl'>useState <i className="text-secondary">Hook</i></h2>
             <p className='text-white font-semibold md:text-[20px] mt-5 md:leading-9 leading-7'>useState is a React Hook that lets you add a <span className="text-secondary font-bold">State variable</span> to your component.</p>

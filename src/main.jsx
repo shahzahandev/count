@@ -5,15 +5,17 @@ import MainRoot from './components/MainRoot';
 import Count1 from "./components/Count1/Count1"
 import UseEffectCount from './components/UseEffectCount/UseEffectCount';
 import Banner from './components/Banner/Banner';
+import Home from './components/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainRoot,
     children: [
-        { path: "/", Component: Banner},
-        { path: "useState", Component: Count1},
-        { path: "useEffect", Component: UseEffectCount},
+        { path: "/", Component: Home},
+        { path: "/hooks", Component: Banner},
+        { path: "/useState", Component: Count1},
+        { path: "/useEffect", Component: UseEffectCount},
     ]
   }
 ]);

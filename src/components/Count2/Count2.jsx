@@ -10,7 +10,7 @@ const Count2 = () => {
         <div className="bg-gray-900 pt-[0px] pb-[10px] overflow-x-hidden px-3 md:px-0 ">
             <Container>
                 <div>
-                    <div className="">
+                    <div className="md:w-[80%] w-[100%]">
                           <h2 className='text-third font-bold md:text-2xl md:mt-5 mt-2'>Basic useState examples</h2>
                          <h3 className='text-white/60 font-bold md:text-[20px]'>Example 3 of 4: Text field (string)</h3>
                          <p className='text-white font-semibold md:text-[20px] md:mt-5 mt-2 md:leading-9 leading-7'>In this example, the text state variable holds a string. When you type, handleChange reads the latest input value from the browser input DOM element, and calls setText to update the state. This allows you to display the current text below.</p>
